@@ -1,0 +1,108 @@
+.hero-baner-home{
+    width: 100%;
+    height: 525px;
+    position: relative;
+    .wrapper{
+        width: 1140px;
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+        div{
+            position: absolute;
+            bottom: -70px;
+        }
+        .ipad{
+            z-index: 2;
+            left: 510px;
+            -webkit-animation: ipad 5s ease-in-out alternate;
+            animation: ipad 5s ease-in-out alternate;
+            animation-delay: 2s;
+        }
+        .iphone{
+            z-index: 3;
+            left: 740px;
+        
+            -webkit-animation: iphone 2s ease-in-out alternate;
+            animation: iphone 2s ease-in-out alternate;
+            animation-delay: 4s;
+        }
+        .macbook{
+            z-index: 1;
+            left: 40px;
+               
+            -webkit-animation: mac 2s ease-in-out alternate;
+            animation: mac 2s ease-in-out alternate;
+        }
+    }
+}
+
+@-webkit-keyframes mac {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    70%{
+        -webkit-transform: scale(1.5);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes mac {
+    0% {
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@-webkit-keyframes ipad{
+    0%{
+        -webkit-transform: rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+@keyframes ipad {
+    0%{
+        transform: rotateZ(0deg); left:510px;
+    }
+    33%{
+        transform: rotateZ(360deg); left: 700px;
+    }
+    66%{
+        transform: rotateZ(0deg); left: 300px;
+    }
+    100% {
+        transform: rotateZ(360deg); left: 510px;
+    }
+}
+@-webkit-keyframes iphone{
+    0%{
+        -webkit-transform: rotateY(0);
+    }
+    50%{
+        -webkit-transform: rotateY(90deg);
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+    }
+}
+
+@keyframes iphone {
+    0%{
+        transform: rotateY(0);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateY(0);
+    }
+}

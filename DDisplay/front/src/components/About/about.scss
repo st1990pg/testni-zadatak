@@ -1,0 +1,55 @@
+.about-us{
+    .about{
+        margin: 50px 0;
+    }
+    .img-about{
+        widows: 380px;
+        height: 260px;
+    }
+    .mission{
+        margin-bottom: 50px
+    }
+    .service {
+        .col{
+            padding: 0px;
+        }
+        background: #efefef;
+        .button-service:hover{
+            background: #dadada;
+        }
+        .button-service{
+            height: 200px;
+            text-align: center;
+            .centre{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                transform: translate3d(-50%,-50%,0);
+                img{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .button-service.active{
+            background: #dadada;
+        }
+        .tab-content{
+            display: none;
+        }
+        .tab-content.active{
+            display: block;
+            p{
+                padding: 30px 0
+            }
+            
+        }
+        ul {
+            list-style: square inside url("/img/service/arrow-li.png");
+            margin-bottom: 50px;
+          }
+          .tab-body {
+              background: #fff
+          }
+    }
+}

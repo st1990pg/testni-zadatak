@@ -1,0 +1,76 @@
+.contact{
+    .map-google{
+        position: relative;
+        height: 500px;
+        top: -8px;
+    }
+    .contact-form-text{
+        h3{
+            margin-top: 50px;
+        }
+        p{
+            margin: 30px 0;
+        }
+    }
+    .contact-info-text{
+        h3{
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .wrapper{
+            margin: 20px 0;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        td{
+            font-size: 14px;
+        }
+        table{
+            width: 100%;
+        }
+        .green a{
+            color: #2ecc71;
+        }
+        
+    }
+    .contac-form{
+
+        margin-bottom: 50px;
+          
+        input{
+            padding: 10px;
+            width: 350px;
+            height: 45px;
+            margin: 10px 0;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+        }
+        textarea{
+            width: 560px;
+            height: 220px;
+            margin: 10px 0;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            outline: none;
+        }
+        .createAccount{
+            button{
+
+            }
+            
+        }
+        .errorMessage {
+            color: red;
+            font-size: 12px;
+            display: relative;
+          }
+          input.error {
+            border: 1px solid red;
+          }
+    }
+}

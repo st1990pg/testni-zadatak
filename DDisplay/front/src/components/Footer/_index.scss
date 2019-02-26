@@ -1,0 +1,36 @@
+footer{
+    
+   font-family: 'Open Sans', sans-serif;
+
+   //text h4
+   .call-out-sec{
+    color: white;
+       padding: 55px 0 55px 0;
+       background: #322f2f;
+       .text-h4{
+           text-align: left;
+           margin-top: 10px;
+       }
+       
+   }
+   //****button cilick here to find out****
+   
+    .footer-bottom{
+        p {
+            margin: 30px 0;
+            color:#737373;
+        }
+        .text-p{
+            text-align: left;
+        }
+        .footer-nav{
+            text-align: right;
+            font-weight: 700;
+        }
+        .link{
+            color:#737373;
+        }
+    }
+    
+
+}

@@ -1,0 +1,26 @@
+@import "components/App";
+
+body {
+    font-family: 'Roboto';
+    color: #737373;
+}
+img{
+    object-fit: cover;
+}
+
+.img_link::before{
+    width: 100px;
+    content: " ";
+    background-image: url("/src/img/link.png");
+    position: absolute;
+    left: 2140.5px;
+    top: 50px;
+    height: 100px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.img_link:hover::before{
+    opacity: 1;
+}

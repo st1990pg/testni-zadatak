@@ -1,0 +1,310 @@
+{
+  "home": [
+    {
+      "slider": [
+        {
+          "id": 0,
+          "img": "/src/img/slider-1",
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+        },
+        {
+          "id": 1,
+          "img": "/src/img/slider-2",
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+        },
+        {
+          "id": 2,
+          "img": "/src/img/slider-3",
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+        },
+        {
+          "id": 3,
+          "img": "/src/img/slider-4",
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+        },
+        {
+          "id": 4,
+          "img": "/src/img/slider-5",
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+        },
+        {
+          "id": 5,
+          "img": "/src/img/slider-3",
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+        },
+        {
+          "id": 6,
+          "img": "/src/img/slider-1",
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+        },
+        {
+          "id": 7,
+          "img": "/src/img/slider-5",
+          "title": "Lorem ipsum dolor",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+        }
+      ]
+    }
+  ],
+  "work": [
+    {
+      "id": 0,
+      "title": "Test",
+      "img": "/src/img/work/slider-1.jpg",
+      "category": "Web"
+    },
+    {
+      "id": 1,
+      "title": "Test",
+      "img": "/src/img/work/slider-2.jpg",
+      "category": "print"
+    },
+    {
+      "id": 2,
+      "title": "Test",
+      "img": "/src/img/work/slider-3.jpg",
+      "category": "Applications"
+    },
+    {
+      "id": 3,
+      "title": "Test",
+      "img": "/src/img/work/slider-4.jpg",
+      "category": "Web"
+    },
+    {
+      "id": 4,
+      "title": "Test",
+      "img": "/src/img/work/slider-5.jpg",
+      "category": "print"
+    },
+    {
+      "id": 5,
+      "title": "Test",
+      "img": "/src/img/work/work-1.jpg",
+      "category": "Applications"
+    },
+    {
+      "id": 6,
+      "title": "Test",
+      "img": "/src/img/work/work-2.jpg",
+      "category": "Web"
+    },
+    {
+      "id": 7,
+      "title": "Test",
+      "img": "/src/img/work/work-3.jpg",
+      "category": "Photography"
+    },
+    {
+      "id": 8,
+      "title": "Test",
+      "img": "/src/img/work/work-4.jpg",
+      "category": "print"
+    },
+    {
+      "id": 9,
+      "title": "Test",
+      "img": "/src/img/work/slider-1.jpg",
+      "category": "Web"
+    },
+    {
+      "id": 10,
+      "title": "Test",
+      "img": "/src/img/work/work-4.jpg",
+      "category": "Photography"
+    },
+    {
+      "id": 11,
+      "title": "Test",
+      "img": "/src/img/work/slider-4.jpg",
+      "category": "print"
+    },
+    {
+      "id": 12,
+      "title": "Test",
+      "img": "/src/img/work/slider-2.jpg",
+      "category": "print"
+    },
+    {
+      "id": 13,
+      "title": "Test",
+      "img": "/src/img/work/work-2.jpg",
+      "category": "Applications"
+    },
+    {
+      "id": 14,
+      "title": "Test",
+      "img": "/src/img/work/slider-1.jpg",
+      "category": "Photography"
+    },
+    {
+      "id": 15,
+      "title": "Test",
+      "img": "/src/img/work/work-3.jpg",
+      "category": "print"
+    },
+    {
+      "id": 16,
+      "title": "Test",
+      "img": "/src/img/work/slider-3.jpg",
+      "category": "Applications"
+    },
+    {
+      "id": 17,
+      "title": "Test",
+      "img": "/src/img/work/work-1.jpg",
+      "category": "Photography"
+    },
+    {
+      "id": 18,
+      "title": "Test",
+      "img": "/src/img/work/slider-1.jpg",
+      "category": "Web"
+    },
+    {
+      "id": 19,
+      "title": "Test",
+      "img": "/src/img/work/slider-2.jpg",
+      "category": "print"
+    },
+    {
+      "id": 20,
+      "title": "Test",
+      "img": "/src/img/work/slider-3.jpg",
+      "category": "Applications"
+    },
+    {
+      "id": 21,
+      "title": "Test",
+      "img": "/src/img/work/slider-4.jpg",
+      "category": "Web"
+    },
+    {
+      "id": 22,
+      "title": "Test",
+      "img": "/src/img/work/slider-5.jpg",
+      "category": "print"
+    },
+    {
+      "id": 23,
+      "title": "Test",
+      "img": "/src/img/work/work-1.jpg",
+      "category": "Applications"
+    },
+    {
+      "id": 24,
+      "title": "Test",
+      "img": "/src/img/work/work-2.jpg",
+      "category": "Web"
+    },
+    {
+      "id": 25,
+      "title": "Test",
+      "img": "/src/img/work/work-3.jpg",
+      "category": "Photography"
+    },
+    {
+      "id": 26,
+      "title": "Test",
+      "img": "/src/img/work/work-4.jpg",
+      "category": "print"
+    },
+    {
+      "id": 27,
+      "title": "Test",
+      "img": "/src/img/work/slider-1.jpg",
+      "category": "Web"
+    },
+    {
+      "id": 28,
+      "title": "Test",
+      "img": "/src/img/work/work-4.jpg",
+      "category": "Photography"
+    },
+    {
+      "id": 29,
+      "title": "Test",
+      "img": "/src/img/work/slider-4.jpg",
+      "category": "print"
+    },
+    {
+      "id": 30,
+      "title": "Test",
+      "img": "/src/img/work/slider-2.jpg",
+      "category": "print"
+    },
+    {
+      "id": 31,
+      "title": "Test",
+      "img": "/src/img/work/work-2.jpg",
+      "category": "Applications"
+    },
+    {
+      "id": 32,
+      "title": "Test",
+      "img": "/src/img/work/slider-1.jpg",
+      "category": "Photography"
+    },
+    {
+      "id": 33,
+      "title": "Test",
+      "img": "/src/img/work/work-3.jpg",
+      "category": "print"
+    },
+    {
+      "id": 34,
+      "title": "Test",
+      "img": "/src/img/work/slider-3.jpg",
+      "category": "Applications"
+    },
+    {
+      "id": 35,
+      "title": "Test",
+      "img": "/src/img/work/work-1.jpg",
+      "category": "Photography"
+    }
+  ],
+  "message": [
+    {
+      "id": 0,
+      "name": "Janko Jankovic",
+      "email": "janko@asd.com",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+    },
+    {
+      "name": "sidljals",
+      "email": "st1990pg@gmail.com",
+      "subject": "dasdasd",
+      "body": "dassdasdasdasd",
+      "id": 1
+    },
+    {
+      "name": "Stefan Todorovic",
+      "email": "st1990pg@gmail.com",
+      "subject": "Testiramo formu",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.",
+      "id": 2
+    },
+    {
+      "name": "Aco Todorovic",
+      "email": "at199epg@gmail.com",
+      "subject": "Greska sa mejlovima",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.",
+      "id": 3
+    },
+    {
+      "name": "sidljals",
+      "email": "st1990pg@gmail.com",
+      "subject": "dasdasd",
+      "body": "dsadasd",
+      "id": 4
+    }
+  ]
+}
