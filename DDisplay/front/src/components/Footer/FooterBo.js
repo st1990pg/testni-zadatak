@@ -3,6 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { NavLink  } from "react-router-dom";
 
 class FooterBo extends Component {
+  constructor(){
+        super();
+        this.returnToTop = this.returnToTop.bind(this);
+    }
+
+    returnToTop(){
+        document.documentElement.scrollTop = 0
+    }
   render() {
     return (
       <div className="footer-bottom">
