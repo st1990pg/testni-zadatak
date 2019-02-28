@@ -22,52 +22,55 @@ class Work extends Component {
       Work: [],
       per: 12,
       page: 1,
-      total_pages: null,
+      total_pages: 3,
       filter: [],
       filte: false
     };
     this.changeView = this.changeView.bind(this);
     this.filetrWork = this.filetrWork.bind(this);
     this.loadWork = this.loadWork.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
-    this.loadMore = this.loadMore.bind(this);
+      this.getDocumentHeight = this.getDocumentHeight.bind(this);
+      this.getScrollTop = this.getScrollTop.bind(this);
   }
-  loadMore = () => {
-    this.setState(
-      prevState => ({
-        page: prevState.page + 1,
-        scrolling: true
-      }),
-      this.loadWork
-    );
-  };
+
+  getDocumentHeight() {
+        const body = document.body;
+        const html = document.documentElement;
+
+        return Math.max(
+            document.body.scrollHeight, document.body.offsetHeight,
+            html.clientHeight, html.scrollHeight, html.offsetHeight
+        );
+    };
+    getScrollTop() {
+        return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    }
+
   loadWork(){
-    const {per, page, Work} = this.state;
+    const {per, page, Work, total_pages} = this.state;
+    if(page > total_pages) return;
     const url = `http://localhost:3000/work?_page=${page}&_limit=${per}`
     fetch(url)
     .then( res => res.json())
     .then(json => 
       this.setState({
           Work: [...Work, ...json],
-           scrolling: false,
-           total_pages: json.total_pages,
-      })
+          page: page + 1,
+        }), console.log(this.state.page)
       )
   }
-  handleScroll = () => { 
-    let lastLi = document.querySelector(".wokr-images.row > div");
-    let lastLiOffset = (lastLi.offsetTop + lastLi.clientHeight)*2;
-    let pageOffset = window.pageYOffset + window.innerHeight;
-    if (pageOffset > lastLiOffset) {
-         this.loadMore();
+    componentDidMount(){
+        this.loadWork();
     }
-  };
-  
-  componentDidMount(){
-    this.loadWork();
-    this.scrollListener = window.addEventListener("scroll", e => {
-      this.handleScroll(e);
-    });
+
+    componentDidUpdate(){
+      if(this.state.page < this.state.total_pages) {
+              window.addEventListener('scroll', () => {
+                  if (this.getScrollTop() < this.getDocumentHeight() - window.innerHeight) return;
+                  this.loadWork();
+                  console.log(this.state.Work, this.state.total_pages, 'doauysdohausd');
+              })
+      }
   }
 
   changeView(e) {
@@ -162,7 +165,7 @@ class Work extends Component {
             </Col>
           </Row>
           <Row className="wokr-images">
-            {Gred}
+              {Gred}
           </Row>
         </Container>
 
