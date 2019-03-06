@@ -273,37 +273,38 @@
   ],
   "message": [
     {
-      "id": 0,
-      "name": "Janko Jankovic",
-      "email": "janko@asd.com",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu."
+      "name": "sada",
+      "email": "dasds@dsalsd.dsd",
+      "subject": "sad",
+      "body": "asdasd",
+      "id": 0
     },
     {
-      "name": "sidljals",
+      "name": "Stefan",
       "email": "st1990pg@gmail.com",
-      "subject": "dasdasd",
-      "body": "dassdasdasdasd",
+      "subject": "Greska sa mejlovima",
+      "body": "dsasdasd",
       "id": 1
     },
     {
-      "name": "Stefan Todorovic",
+      "name": "Stefan",
       "email": "st1990pg@gmail.com",
-      "subject": "Testiramo formu",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.",
+      "subject": "Drugi test da li ce proci",
+      "body": "dsddasdasdasd",
       "id": 2
     },
     {
-      "name": "Aco Todorovic",
-      "email": "at199epg@gmail.com",
+      "name": "Stefan",
+      "email": "st1990pg@gmail.com",
       "subject": "Greska sa mejlovima",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.",
+      "body": "dasdasd",
       "id": 3
     },
     {
-      "name": "sidljals",
-      "email": "st1990pg@gmail.com",
-      "subject": "dasdasd",
-      "body": "dsadasd",
+      "name": "Aleksa",
+      "email": "at1993pg@gmail.com",
+      "subject": "Greska sa mejlovima",
+      "body": "",
       "id": 4
     }
   ]

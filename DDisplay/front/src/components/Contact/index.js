@@ -35,24 +35,25 @@ class Contact extends Component {
               </div>
               <h3>STORE HOURS</h3>
               <table>
-              <tr>
-                <td>Monday - Thursday  </td>
-                <td>8 am - 5 pm</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>8 am - 6 pm</td>
-              </tr>
-              <tr>
-                <td>Saturday</td>
-                <td>9 am - 5 pm</td>
-              </tr>
-              <tr>
-                <td>Sunday & Holidays</td>
-                <td>Closed</td>
-              </tr>
+                <tbody>
+                  <tr>
+                    <td>Monday - Thursday  </td>
+                    <td>8 am - 5 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>8 am - 6 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>9 am - 5 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday & Holidays</td>
+                    <td>Closed</td>
+                  </tr>
+                </tbody>
               </table>
-
             </Col>
           </Row>
         </Container>

@@ -3,7 +3,7 @@
         text-align: center;
         img{
             margin: 5px 0;
-            width: 300px;
+            width: 100%;
             height: 220px;
         }
         
@@ -41,8 +41,8 @@
         background-color: rgba($color: #fff, $alpha: .5);
         background-position: center;
         top: 0;
-        left: 40px;
-        width: 300px;
+        left: 0;
+        width: 100%;
         height: 100%;
     }
     .list-view.img_link::before{
@@ -54,4 +54,8 @@
         height: 100%;
     }
 }
-    
+@media only screen and (max-width: 580px){
+    .view-work{
+        display: none;
+    }
+}

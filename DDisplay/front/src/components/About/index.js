@@ -15,8 +15,8 @@ import ServiceTab from './Service/ServiceTab';
           
             <div className="about">
             <Row>
-              <Col xs={5}><img className="img-about" src={imgAbout} alt="imgAbout" /></Col>
-              <Col xs={7}><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus,
+              <Col lg={5}><img className="img-about" src={imgAbout} alt="imgAbout" /></Col>
+              <Col lg={7}><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus,
                  vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi,
                   quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque,
                    id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.
@@ -26,14 +26,14 @@ import ServiceTab from './Service/ServiceTab';
             </div>
             <div className="mission">
             <Row>
-              <Col xs={6}>
+              <Col lg={6}>
               <h4>Mission Statement</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus,
                  vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi,
                   quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque,
                    id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.</p>
               </Col>
-              <Col xs={6}>
+              <Col lg={6}>
               <h4>Fun FActs</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus,
                  vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi,

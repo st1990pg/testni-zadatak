@@ -81,13 +81,15 @@ export default class SliderPort extends Component {
   }
 
   render() {
+    let numIt = screen.width > 1725 ? 5 : screen.width < 1725 && screen.width > 1125 ? 3 : screen.width < 1125 ? 1 : 0;
+    let centIm = screen.width < 1125? false: true;
     const settings = {
         className: "center",
-        centerMode: true,
+        centerMode: centIm,
         infinite: true,
         centerPadding: "60px",
-        slidesToShow: 5,
-        speed: 500,
+        slidesToShow: numIt,
+        speed: 1000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
       };

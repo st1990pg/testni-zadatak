@@ -24,3 +24,19 @@ img{
 .img_link:hover::before{
     opacity: 1;
 }
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.not-found{
+    position: relative;
+}
+.center_e {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transform: translate3d(-50%,-50%,0);
+}

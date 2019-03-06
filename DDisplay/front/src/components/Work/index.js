@@ -18,7 +18,7 @@ class Work extends Component {
     super();
     this.state = {
       active: '',
-      view: 'grid',
+      view: screen.width < 500 ? 'list' : 'grid',
       Work: [],
       per: 12,
       page: 1,
@@ -126,12 +126,13 @@ class Work extends Component {
 
 
   render() {
+    let numCol = screen.width < 800 ? 6 : 4;
     let worke = this.state.filte ? this.state.filter : this.state.Work;
     let Gred;
-    let activeGrid = "active";
-    let activeList = ""
+    let activeGrid =screen.width < 500 ? "":"active";
+    let activeList = screen.width < 500 ? "active":"";
     if(this.state.view === 'grid'){
-      Gred = worke.map((item, i) => <GridView key={i} item={item} />);
+      Gred = worke.map((item, i) => <GridView key={i} item={item} numCol={numCol} />);
       activeGrid = "fas fa-th-large active";
       activeList = "fas fa-bars"
     }
@@ -146,7 +147,7 @@ class Work extends Component {
         <PageTitle title="CHECK OUT WHAT I CAN DO" />
         <Container>
           <Row>
-            <Col>
+            <Col xs={12} sm={9}>
               <div className="filter-work">
 
                 <div value = 'All' onClick={this.filetrWork}><h5>All  /</h5></div>

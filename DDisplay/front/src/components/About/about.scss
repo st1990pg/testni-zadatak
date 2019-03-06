@@ -10,6 +10,9 @@
         margin-bottom: 50px
     }
     .service {
+        .tabb-no-padd div{
+            padding: 0;
+        }
         .col{
             padding: 0px;
         }
@@ -52,4 +55,13 @@
               background: #fff
           }
     }
+
+    @media only screen and (max-width: 900px){
+        .img-about{
+            margin-bottom: 20px;
+        }
+        
+    }
 }
+
+

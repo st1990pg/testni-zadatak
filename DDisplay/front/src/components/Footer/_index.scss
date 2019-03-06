@@ -20,6 +20,14 @@ footer{
             margin: 30px 0;
             color:#737373;
         }
+        .active{
+            p{
+                color: #2ecc71;
+                span{
+                    color: #737373;
+                }
+            }
+        }
         .text-p{
             text-align: left;
         }
@@ -29,6 +37,26 @@ footer{
         }
         .link{
             color:#737373;
+
+        }
+        .float-left:last-child{
+            span{
+                display: none;
+            }
+        }
+        .float-left{
+            margin-left: 5px;
+        }
+    }
+    @media only screen and (max-width: 580px) {
+        .footer-nav.float-right {
+            display: none;
+        }
+        .call-out-sec .text-h4{
+            text-align: center;
+        }
+        .call-out-sec .button-footer{
+            text-align: center !important;
         }
     }
     

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Col } from 'react-bootstrap';
 
-export default ({item}) => {
+export default ({item, numCol}) => {
   return (
-    <Col xs={4}>
+    <Col xs={numCol}>
         <div className="grid-view img_link">
             <img src={item.img} alt={item.title} />
         </div>

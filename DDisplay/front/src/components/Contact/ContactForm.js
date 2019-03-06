@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ButtonGr from '../Elements/ButtonGr';
-
+import { ReCaptcha } from 'react-recaptcha-google'
 
 const formValuid = ({formErrors, ...rest}) => {
     let valid = true;
@@ -37,6 +37,9 @@ class ContactForm extends Component {
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.messageReq = this.messageReq.bind(this);
+        this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
+        this.verifyCallback = this.verifyCallback.bind(this);
     }
 
     
@@ -52,7 +55,7 @@ class ContactForm extends Component {
         let formErrors = this.state.formErrors;
 
 
-        if (state.name.length < 3 && state.name.length > 0){
+        if (state.name.length < 3){
             formErrors.name = 'minimum 3 caracters required';
         }else{
             formErrors.name = ''
@@ -60,11 +63,12 @@ class ContactForm extends Component {
 
         if (!emailRegex.test(state.email)){
             formErrors.email = 'Invalid email address';
+            this.state.email = ""
         }else{
             formErrors.email = ''
         }
 
-        if (state.subject.length < 3 && state.subject.length > 0){
+        if (state.subject.length < 3){
             formErrors.subject = 'minimum 3 caracters required';
         }else{
             formErrors.subject = ''
@@ -80,20 +84,7 @@ class ContactForm extends Component {
         this.setState({formErrors});
     }
 
-    handleSubmit(e){
-        const {name, email, subject, body} = this.state;
-        const data = {
-            name: name,
-            email: email,
-            subject: subject,
-            body: body
-        }
-        e.preventDefault();
-
-        this.validation();
-        console.log(data)
-
-    
+    messageReq(data){
         fetch("http://localhost:3000/message", {
             method: "POST",
             headers: {
@@ -103,9 +94,42 @@ class ContactForm extends Component {
         })
         .then(response => console.log(response), this.setState({sendMess: true}))
         .catch(error => console.error('Error:', error));
+    }
 
+    onLoadRecaptcha(){
+        if (this.captchaDemo) {
+            this.captchaDemo.reset();
+        }
+    }
+
+
+    componentDidMount() {
+        if (this.captchaDemo) {
+            console.log("started, just a second...")
+            this.captchaDemo.reset();
+        }
+    }
+    verifyCallback(recaptchaToken) {
+        // Here you will get the final recaptchaToken!!!  
+        console.log(recaptchaToken, "<= your recaptcha token")
+      }
+
+    handleSubmit(e){
+        const {name, email, subject, body, formErrors} = this.state;
+        const data = {
+            name: name,
+            email: email,
+            subject: subject,
+            body: body
+        }
+        e.preventDefault();
+
+        this.validation();
+        console.log(data);
+        if(formErrors.name.length == '' && formErrors.email.length == '' && formErrors.subject.length == '' && formErrors.body.length == ''){
+            this.messageReq(data);
+        }
         
-
     }        
      
   render() {
@@ -161,7 +185,15 @@ class ContactForm extends Component {
             <div className="createAccount">
                 <ButtonGr title="SEND MESSAGE" />
             </div>
-            
+            <ReCaptcha
+                ref = {(el) => {this.captchaDemo = el}}
+                size="normal"
+                render="explicit"
+                data-theme="dark"  
+                sitekey='6LeU4JMUAAAAABgWxMFl8L2BvSGq9z9xkX9LeBoP'
+                onloadCallback={this.onLoadRecaptcha}
+                verifyCallback={this.verifyCallback}
+            />
         </form>
             <div style={styleMess}>
                 <h2 style={{color:"#2ecc71"}}>Poruka je uspjesno poslata!!!</h2>

@@ -91,7 +91,7 @@ class ServiceTab extends Component {
         return (
             <div>
             <Container>
-                <Row>
+                <Row className="tabb-no-padd">
                     
                     {service.map((ser, i) =>{
                         let className = "button-service";
@@ -99,7 +99,7 @@ class ServiceTab extends Component {
                             className = "button-service active"
                         }
                         return(
-                            <Col key={i}><ServiceBt className={className} item={ser} onClick={this.addCon} /></Col>
+                            <Col xs={6} md={3} key={i}><ServiceBt className={className} item={ser} onClick={this.addCon} /></Col>
                         )
                     } )}
                 

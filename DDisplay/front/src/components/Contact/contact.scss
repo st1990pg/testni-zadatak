@@ -26,8 +26,9 @@
         td{
             font-size: 14px;
         }
-        table{
+        tbody{
             width: 100%;
+            display: table;
         }
         .green a{
             color: #2ecc71;
@@ -73,4 +74,11 @@
             border: 1px solid red;
           }
     }
-}
+    @media only screen and (max-width: 580px){
+        .contac-form{
+            textarea{
+                width: 100%;
+                height: 150px;
+            }
+    }
+}}
